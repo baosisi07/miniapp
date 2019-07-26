@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/reward/index",
+    "pages/reward/list/list",
+    "pages/reward/detail/detail",
+    "pages/reward/extract/extract",
+    "pages/reward/top/top",
+    "pages/account/bindMobile",
+    "pages/account/chooseArea",
+    "pages/product/list/list",
+    "pages/product/detail/detail",
+    "pages/home/home",
+    "pages/home/bankCard/bankCard",
+    "pages/home/bankCard/bankList",
+    "pages/message/list",
+    "pages/webview/webview",
+    "pages/home/friends/friends",
+    "pages/login/login",
+    "pages/common/webback",
+    "pages/goodsDetail/goodsDetail",
+    "pages/home/idCard/idCard",
+    "pages/inviteNew/inviteNew"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f0f0f0",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#b0b0b0",
+    "selectedColor": "#d0021b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/home-dark.png",
+        "selectedIconPath": "static/images/home-light.png"
+      },
+      {
+        "pagePath": "pages/reward/index",
+        "text": "佣金",
+        "iconPath": "static/images/reward-dark.png",
+        "selectedIconPath": "static/images/reward-light.png"
+      },
+      {
+        "pagePath": "pages/message/list",
+        "text": "消息",
+        "iconPath": "static/images/message-dark.png",
+        "selectedIconPath": "static/images/message-light.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "static/images/mine-dark.png",
+        "selectedIconPath": "static/images/mine-light.png"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx084ab813d88c594b"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "focus-image": "./focus/focus",
+        "image-list": "./imageList/imageList",
+        "editor-talk": "./editorTalk/editorTalk",
+        "splitImage": "./split-image/index"
+    }
+}

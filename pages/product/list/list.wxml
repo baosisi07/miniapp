@@ -1,0 +1,21 @@
+<scroll-view class="list-container" scroll-y scroll-top="{{scrollTop}}" bindscrolltolower="productList">
+
+  <view wx:if="{{msortList}}" class="sort-wrap-fixed">
+    <view class="sort-content">
+      <view class="sort-list">
+        <view wx:for="{{msortList}}" wx:key="{{index}}" class="sort-item {{item.sort_id == activeSort ? 'active' : ''}}" data-msort="{{item.sort_id}}" bindtap="changeSortType">
+        {{item.sort_name}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+    <view class="list-wrap">
+        <product-list
+            bindproductclick="productClick"
+            list="{{productList}}"
+            show-no-more="{{showNoMore}}"
+            show-loading="{{showLoading}}">
+        </product-list>
+    </view>
+</scroll-view>

@@ -1,0 +1,8 @@
+<view class="edit-talk" bindtap="jumpTo">
+    <view wx:for="{{talks}}" wx:key="{{index}}" class="{{item.class}}">
+        <block wx:for="{{item.main}}" wx:key="{{index}}">
+            <text wx:if="{{item.tag === 'text'}}" class="{{item.class}}">{{item.content}}</text>
+            <block wx:if="{{!item.tag}}">{{item.content}}</block>
+        </block>
+    </view>
+</view>

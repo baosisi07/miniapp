@@ -1,0 +1,7 @@
+<view class="product-list">
+    <product-item wx:for="{{list}}"
+                  bindproductclick="click"
+                  wx:key="{{item.default_images}}" item="{{item}}" data-idx="{{index + 1}}"></product-item>
+</view>
+<view class="status-tip loading" hidden="{{!_showLoading}}">加载中...</view>
+<view wx:if="{{_showNoMore}}" class="status-tip no-more">没有更多了</view>

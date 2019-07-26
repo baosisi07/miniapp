@@ -1,0 +1,87 @@
+.coat {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.6;
+    z-index: 999
+}
+
+.tip-img {
+    height: 680rpx;
+    z-index: 1000;
+    left: 50%;
+    position: fixed;
+    top: 185rpx;
+    width: 680rpx;
+    transform: translate(-50%);
+}
+
+.close {
+    color: #fff;
+    position: fixed;
+    right: 60rpx;
+    top: 40rpx;
+    height: 60rpx;
+    width: 60rpx;
+    z-index: 1000;
+}
+
+.tip {
+    z-index: 10;
+    left: 50%;
+    position: fixed;
+    margin-left: -268rpx;
+    top: 260rpx;
+    width: 536rpx;
+    height: 445rpx;
+    background: #fff;
+    font-size:28rpx;
+    border-radius: 10rpx;
+}
+
+.tip .title {
+    margin-top: 78rpx;
+    text-align: center;
+    font-weight: bold;
+    font-size: 34rpx;
+}
+
+.tip .content {
+    margin-top:30rpx;
+    padding:0 28rpx;
+}
+
+.tip .bottom {
+    position: absolute;
+    width: 458rpx;
+    height:76rpx;
+    line-height: 76rpx;
+    text-align: center;
+    background: #333333;
+    bottom:40rpx;
+    color:#fff;
+    margin-left: -229rpx;
+    left: 50%;
+    border-radius: 38rpx;
+}
+
+.tip .tip-image{
+    position: fixed;
+    width: 282rpx;
+    height: 106rpx;
+    top: 206rpx;
+    left: 50%;
+    margin-left:-141rpx ;
+}
+
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:8;
+}

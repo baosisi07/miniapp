@@ -1,0 +1,37 @@
+<view class="upload_idcard">
+  <view class="title">请上传身份证照片</view>
+  <view class="desc">
+    <view class="dot"></view>请上传原始比例清晰的身份证正反面。请勿进行裁剪涂改，否则无法通过审核。</view>
+  <view class="desc">
+    <view class="dot"></view>照片格式支持jpg、jpeg、png。</view>
+  <view class="desc">
+    <view class="dot"></view>身份证照片信息将加密处理，仅用于提现财务用途。</view>
+  <view class="desc">
+    <view class="dot"></view>身份证信息需与提现银行卡信息匹配，否则无法正常提现成功。</view>
+
+  <view class="upload_wrapper">
+    <view class="upload_item">
+      <upload index="{{1}}" tip='{{"正面照片"}}' bind:success="onUploadSuccess" bind:remove="onUploadRemove" bind:error="onUploadError">
+      </upload>
+    </view>
+    <view class="upload_item">
+      <upload index="{{2}}" tip='{{"反面照片"}}' bind:success="onUploadSuccess" bind:remove="onUploadRemove" bind:error="onUploadError"></upload>
+    </view>
+  </view>
+
+  <view class="sample">
+    <view class="id_sample">
+      <image class="id_item" src="/static/images/idcard_pros@2x.png"></image>
+      <image class="id_item" src="/static/images/idcard_cons@2x.png"></image>
+    </view>
+
+    <view class="id_sample">
+      <view class="tip">（示例）</view>
+      <view class="tip">（示例）</view>
+    </view>
+
+  </view>
+
+  <view class="btn" bindtap="submit">提交</view>
+
+</view>

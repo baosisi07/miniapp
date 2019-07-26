@@ -1,0 +1,25 @@
+<view class="bind-mobile">
+    <view class="title">验证手机号</view>
+    <view class="tip">Yoho!Family账号可登录YOHO!旗下所有应用（含:Yoho!Buy有货、Yoho!Now、mars、BLK、Yoho!Store）</view>
+    <view class="field" bindtap="chooseArea">
+        <span class="area">国家/地区<span class="name">{{areaName}}</span></span><image class="area-arrow" 
+            src="../../static/images/arrow-right@2x.png"></image>
+    </view>
+    <view class="field">
+        <span class="area-code" bindtap="chooseArea">+{{areaCode}}</span>
+        <input bindinput="phoneInput" class="field-input" value="{{phoneNum}}" 
+               type="number" maxlength="20" placeholder="请输入手机号"></input>
+    </view>
+    <view class="field">
+        <label class="label">验证码</label>
+        <input bindinput="codeInput" class="field-input code" type="number" maxlength="10" 
+               placeholder="请输入验证码"></input>
+        <span class="{{'send-code ' + activeClass}}" bindtap="sendCode">{{btnText}}</span>
+    </view>
+    <image-check wx:if="{{isNeedImgCheck}}" class="image-check" bindrefreshCode="onRefreshCode"></image-check>
+    <view bindtap="submitTap" class="{{'btn confirm ' + completeClass}}">完成</view>
+    <button wx:if="{{false}}" class="btn auto-bind" bindtap="{{!hasUnionID ? 'autoVerify' : ''}}" 
+            open-type="{{hasUnionID ? 'getPhoneNumber' : ''}}" 
+            bindgetphonenumber="getPhoneNumber">{{autoBtnText}}
+    </button>
+</view>

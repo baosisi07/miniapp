@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "佣金",
+    "usingComponents": {
+        "copyright": "/components/layout/copyright/copyright",
+        "coat":"/components/coat/coat",
+        "modal": "./components/modal",
+        "modal2": "./components/modal2"
+    }
+}

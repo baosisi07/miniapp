@@ -1,0 +1,39 @@
+
+
+<scroll-view class="extract-container" lower-threshold="50" scroll-y bindscrolltolower="loadExtractList">
+
+    <view class="upload" wx:if="{{!isUploaded}}">
+      <view class="upload-desc">结算收益时需按照国家规定预扣个税，因此需先上传身份证信息 。若未提供正确有效的身份信息将导致扣税失败而影响提现。</view>
+      <view class="btn-wrapper">
+      <view class="upload-btn" bindtap="goUpload">去上传</view>
+      </view>
+    </view>
+
+    <view class="{{!isUploaded ? 'desc1' : 'desc'}}" bindtap="goDesc">
+      <view>每月20日结算上个月预估佣金并预扣个税</view>
+      <view>结算说明<text class="iconfont icon-right"></text></view>
+    </view>
+
+    <view wx:for="{{extractList}}" wx:key="{{index}}" class="extract-item">
+      <view class="title">
+        <view class="code">处理编号：{{item.settlementCode}}</view>
+        <view class="red">{{item.settlementStatus}}</view>
+      </view>
+
+      <view class="body">
+        <view class="item">
+          <view>税后总收益：<text class="red">{{item.afterTaxAmountStr}}</text></view>
+        </view>
+
+        <view class="item">
+          <view>提现总金额：{{item.settlementAmountStr}}</view>
+        </view>
+
+        <view class="item">
+          <view>扣税总金额：{{item.taxAmountStr}}</view>
+        </view>
+      </view>
+
+      <view class="time">{{item.settlementTimeStr}}</view>
+    </view>
+</scroll-view>

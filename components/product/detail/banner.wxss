@@ -1,0 +1,52 @@
+.detail-banner {
+    position: relative;
+    width: 100%rpx;
+    background-color: #f4f4f4;
+}
+
+.detail-banner .swiper-wrapper {
+    height: 1000rpx;
+}
+
+.detail-banner .slide-image {
+    width: 100%;
+}
+
+.detail-banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-banner .dots .dot {
+    margin: 0 8rpx;
+    width: 10rpx;
+    height: 10rpx;
+    opacity: 0.7;
+    background: #fff;
+}
+
+.detail-banner .dots .dot.active {
+    opacity: 1;
+    width: 20rpx;
+}
+
+.detail-banner .product-name {
+    height: 80rpx;
+    width: 100%rpx;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.67;
+    background: #000000;
+    font-family: PingFang-SC-Regular;
+    font-size: 28rpx;
+    color: #FFFFFF;
+    letter-spacing: -0.39rpx;
+    line-height: 80rpx;
+    padding-left: 30rpx;
+}

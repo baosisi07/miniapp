@@ -1,0 +1,48 @@
+page {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    background-color: white;
+}
+
+.sort-wrap {
+    height: 88rpx;
+}
+
+.sort-wrap-fixed {
+    width: 100%;
+    overflow: hidden;
+    height: 88rpx;
+    border-bottom: 1rpx solid #eee;
+    background-color: white;
+}
+
+.sort-wrap-fixed.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.sort-wrap-fixed .sort-content {
+    width: 100%;
+    overflow-x: scroll;
+    line-height: 88rpx;
+}
+
+.sort-wrap-fixed .sort-list {
+    white-space: nowrap;
+    padding-bottom: 20rpx;
+}
+
+.sort-wrap-fixed .sort-item {
+    display: inline-block;
+    font-size: 32rpx;
+    padding: 0 30rpx;
+    color: #b0b0b0;
+}
+
+.sort-wrap-fixed .sort-item.active {
+    color: #444;
+}

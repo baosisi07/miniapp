@@ -1,0 +1,54 @@
+<wxs src="../../../wxs/helper.wxs" module="helper" />
+<view wx:if="{{show}}" class="snapshoot">
+    <view class="snapshoot-container">
+        <view class="snapshoot-preview {{type}}">
+            <block wx:if="{{type === 'product'}}">
+                <image class="yoho-logo" src="./images/logo.png"></image>
+
+                <view class="main-view">
+                    <image class="back-image" src="{{helper.image(thumb, 750, 1000)}}"></image>
+                    <view class="cover-info">
+                        <view class="name">{{productName}}</view>
+                        <view class="price">
+                            <text class="sale-price">¥{{salesPrice}}</text>
+                            <text wx:if="{{marketPrice}}" class="market-price">¥{{marketPrice}}</text>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="miniapp-qr">
+                    <image class="qr-code" src="{{wechatQrCode}}"></image>
+                    <view class='qr-tip'>
+                        <view>长按扫码查看详情</view>
+                        <view class="gray">实际价格以页面展示为准</view>
+                    </view>
+                </view>
+            </block>
+            <!-- 邀新 -->
+            <block wx:elif="{{type === 'inviteNew'}}">
+                <image class="yoho-logo" src="./images/logo.png"></image>
+
+                <view class="main-view">
+                    <image class="back-image" src="{{activityImg}}"></image>
+                    
+                </view>
+
+                <view class="miniapp-qr">
+                    <image class="qr-code" src="{{wechatQrCode}}"></image>
+                    <view class='qr-tip'>
+                        <view>长按扫码查看详情</view>
+                        <view class="gray">活动以页面展示为准</view>
+                    </view>
+                </view>
+            </block>
+            
+        </view>
+
+        
+        <view class="snapshoot-btns">
+            <button class="red" bindtap="saveSnapshootPre">保存到相册</button>
+            <button bindtap="tollgeShow">取消</button>
+        </view>
+    </view>
+</view>
+<canvas canvas-id="{{canvasId}}" style="width: {{snapWidth}}px;height:{{snapHeight}}px;position: fixed; left: -200%;"></canvas>

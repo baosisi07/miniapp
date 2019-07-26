@@ -1,0 +1,69 @@
+@import "../../../iconfont.wxss";
+
+.quick-navigation {
+    position: fixed;
+    right: 30rpx;
+    bottom: 100rpx;
+    z-index: 20;
+    flex-direction: column;
+    display: flex;
+    width: 80rpx;
+}
+
+.quick-navigation .qn-menu {
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #fff;
+    font-size: 22rpx;
+    position: relative;
+    overflow: hidden;
+}
+
+.quick-navigation .qn-menu:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 0.6;
+    position: absolute;
+    z-index: -1;
+}
+
+.quick-navigation .qn-menu .menu-text {
+    display: block;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.quick-navigation .switch-menu .iconfont {
+    font-size: 66rpx;
+}
+
+.quick-navigation .qn-menu .two-line-text {
+    width: 100%;
+    line-height: 1.4;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.quick-navigation .hide-menu-group .qn-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+.quick-navigation .back-menu {
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    flex-direction: column;
+    align-self: center;
+}
+
+.quick-navigation .back-menu .iconfont {
+    font-size: 46rpx;
+    position: relative;
+    top: 4rpx;
+    opacity: 0.9;
+}

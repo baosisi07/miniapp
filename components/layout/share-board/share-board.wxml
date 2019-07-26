@@ -1,0 +1,20 @@
+<view wx:if="{{show}}" class="share-board">
+    <view class="share-board-mask" animation="{{maskAnimation}}" bindtap="{{spaceClose ? 'tollgeShow' : ''}}"></view>
+    <view class="share-board-action" animation="{{boardAnimation}}">
+        <view wx:if="{{image}}" class="top-image">
+            <image src="{{image}}" mode="widthFix"></image>
+        </view>
+        <view class="action-list">
+            <block wx:for="{{actions}}" wx:key="{{index}}">
+                <view class="action-item" data-action="{{item.actionName}}" data-close="{{!item.stopClose}}" data-duration="{{item.duration}}" bindtap="actionTap">
+                    <view class="icon">
+                        <image src="{{item.image}}"></image>
+                    </view>
+                    <text class="name">{{item.name}}</text>
+                    <button wx:if="{{item.share}}" class="share-btn" open-type="share"></button>
+                </view>
+            </block>
+        </view>
+        <view class="cancel-btn" bindtap="tollgeShow">{{cancelText}}</view>
+    </view>
+</view>

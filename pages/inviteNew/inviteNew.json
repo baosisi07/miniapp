@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "邀请好友赚红包",
+  "usingComponents": {
+    "share-board": "/components/layout/share-board/share-board",
+    "snapshoot": "/components/layout/snapshoot/snapshoot",
+    "resources": "/components/resources/resources",
+    "coat": "/components/coat/coat"
+  }
+}

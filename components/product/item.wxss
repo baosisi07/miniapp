@@ -1,0 +1,63 @@
+.product-item {
+    width: 100%;
+    padding: 30rpx;
+    border-bottom: 1rpx solid #eee;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.product-item .item-image {
+    width: 160rpx;
+    height: 218rpx;
+    position: absolute;
+}
+
+.product-item .item-detail {
+    padding-left: 190rpx;
+    height: 218rpx;
+    font-size: 28rpx;
+    letter-spacing: 0.28px;
+    font-family: PingFang-SC-Regular;
+}
+
+.product-item .item-title{
+    margin: 10rpx 0;
+    height: 80rpx;
+    line-height: 40rpx;
+    color: #444;
+    word-break: break-all;
+    display: block;
+}
+
+.product-item .item-price {
+    color: #b0b0b0;
+    line-height: 32rpx;
+    margin: 20rpx 0;
+}
+
+.product-item .item-rebate {
+    line-height: 60rpx;
+    color: #d0021b;
+}
+
+.product-item .item-rebate .go-share {
+    background-color: #d0021b;
+    color: #fff;
+    border-radius: 6rpx;
+    float: right;
+    padding: 0 20rpx;
+}
+
+.product-item .item-detail .item-collage{
+    background:#000;
+    color:#fff;
+    height:28rpx;
+    width:80rpx;
+    font-size:18rpx;
+    text-align:center;
+    line-height:28rpx;
+    vertical-align:middle;
+    margin-left:20rpx;
+    display:inline-block;
+    border-radius:7rpx;
+}

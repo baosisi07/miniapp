@@ -1,0 +1,138 @@
+page {
+    background-color: #f0f0f0;
+}
+
+.reward-container {
+    color: #444;
+    font-size: 28rpx;
+}
+
+.reward-amount {
+    padding: 0 40rpx;
+    background-color: #fff;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+
+.reward-amount .title {
+    font-size: 24rpx;
+    color: #b0b0b0;
+    padding: 30rpx 0;
+}
+
+.reward-amount .reward-sum {
+    font-size: 84rpx;
+    font-weight: 900;
+    position: relative;
+    padding-right: 150rpx;
+    line-height: 1;
+}
+
+.reward-amount .reward-sum .sum-symbol {
+    font-size: 60rpx;
+}
+
+.reward-amount .reward-sum .sum {
+    letter-spacing: 3rpx;
+}
+
+.reward-amount .take-back {
+    padding: 0 40rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    font-weight: 300;
+    color: #fff;
+    background-color: #d0021b;
+    border-radius: 8rpx;
+    border: 0;
+    position: absolute;
+    right: 0;
+    bottom: 4rpx;
+}
+
+.reward-amount .tips {
+    font-size: 20rpx;
+    color: #b0b0b0;
+    font-weight: 300;
+    line-height: 1.4;
+    padding: 26rpx 0;
+}
+
+.reward-amount .tips .iconfont {
+    font-size: 22rpx;
+}
+
+.tap-bar {
+    background-color: #fff;
+    padding: 0 30rpx;
+    line-height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.income-detail {
+    margin: 20rpx 0;
+}
+
+.data-board {
+    background-color: #fff;
+}
+
+.data-board .tabs-wrap {
+    display: flex;
+    justify-content: space-around;
+    color: #b0b0b0;
+}
+
+.data-board .tabs-wrap .tab-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.data-board .tabs-wrap .active {
+    color: #444;
+    border-bottom: 6rpx solid #444;
+}
+
+.data-board .tabs-wrap .tab-name {
+    height: 100rpx;
+    line-height: 100rpx;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.data-board .data-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.data-board .data-wrap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1rpx solid #f0f0f0;
+}
+
+.data-board .data-wrap .data-item {
+    width: 50%;
+    padding: 36rpx 54rpx;
+    border-top: 1rpx solid #f0f0f0;
+    box-sizing: border-box;
+}
+
+.data-board .data-item .info {
+    font-size: 50rpx;
+    display: block;
+}
+
+.data-board .data-item .price {
+    margin-left: -10rpx;
+}
+
+.data-board .data-item .desc {
+    color: #b0b0b0;
+    font-size: 24rpx;
+    line-height: 1.8;
+}

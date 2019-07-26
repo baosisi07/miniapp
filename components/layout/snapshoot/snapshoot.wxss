@@ -1,0 +1,118 @@
+.snapshoot {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.snapshoot-container {
+    width: 525rpx;
+    color: #444;
+}
+
+.snapshoot-preview {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.snapshoot-preview .yoho-logo {
+    width: 156.8rpx;
+    height: 30rpx;
+    margin: 50rpx auto;
+    display: block;
+}
+
+.snapshoot-preview .main-view {
+    margin: 0 30rpx;
+    height: 606rpx;
+    position: relative;
+}
+
+.snapshoot-preview .main-view .back-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.snapshoot-preview .main-view .cover-info {
+    width: 100%;
+    padding: 20rpx;
+    font-size: 20rpx;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+.snapshoot-preview .cover-info .name {
+    line-height: 2;
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: pre-wrap;
+}
+
+.snapshoot-preview .cover-info .price {
+    font-size: 30rpx;
+    margin-top: 10rpx;
+    text-align: center;
+}
+
+.snapshoot-preview .cover-info .market-price {
+    font-size: 20rpx;
+    margin-left: 20rpx;
+    text-decoration: line-through;
+}
+
+.snapshoot-preview .miniapp-qr {
+    display: flex;
+    align-items: center;
+    margin: 40rpx 30rpx 30rpx;
+}
+
+.snapshoot-preview .miniapp-qr .qr-code {
+    width: 112rpx;
+    height: 112rpx;
+}
+
+.snapshoot-preview .miniapp-qr .qr-tip {
+    margin-left: 30rpx;
+    font-size: 20rpx;
+    line-height: 1;
+}
+
+.snapshoot-preview .qr-tip .gray {
+    margin-top: 8rpx;
+    font-size: 16rpx;
+    color: #B0B0B0;
+}
+
+.snapshoot-btns {
+    width: 100%;
+    padding: 20rpx 0 90rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.snapshoot-btns button {
+    margin: 0;
+    width: 48%;
+    line-height: 90rpx;
+    font-size: 32rpx;
+    border-radius: 8rpx;
+    border: 0;
+}
+
+.snapshoot-btns .red {
+    background-color: #f00;
+    color: #fff;
+}

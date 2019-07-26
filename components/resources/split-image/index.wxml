@@ -1,0 +1,30 @@
+<view class="split-image" style="{{style}}">
+<format-img
+        src="{{floorData.data.src}}"
+        width="{{floorData.image_width}}"
+        height="{{floorData.image_height}}"
+        default-width="{{true}}"
+    ></format-img>
+    <view class='urlContent'>
+    <block wx:for="{{floorData.data.urls}}" wx:key="{{index}}">
+          <view class="split-item">
+            <!-- is-floor="{{true}}"
+                floor-data="{{floorData}}"
+                floor-idx="{{floorIdx}}"
+                item-idx="{{index}}"
+                url="{{item}}" -->
+            <anchor
+                bindclickreport="report"
+                    url="{{item}}" 
+                    floor-id="{{floorId}}" 
+                    floor-name="{{floorName}}"
+                    floor-url="{{item.url}}"
+                    floor-index="{{floorIndex}}" 
+                    floor-item-index="{{index + 1}}"
+                >
+                <view class='placeholder'></view>
+            </anchor>
+        </view>
+        </block>
+    </view>
+</view>

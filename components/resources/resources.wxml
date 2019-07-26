@@ -1,0 +1,28 @@
+<view class="resources">
+    <block wx:for="{{floors}}" wx:key="{{index}}">
+        <focus-image
+            wx:if="{{item.template_name === 'focus'}}"
+            bindclickreport="report"
+            swiper-list="{{item.data}}"
+            floor-id="{{item.template_id}}"
+            floor-name="{{item.template_name}}"
+            floor-index="{{item.floorIndex}}">
+        </focus-image>
+        <!-- 均分楼层 -->
+      <splitImage wx:if="{{item.template_name=='splitJointImg'}}" floor-data="{{item}}" bindclickreport="report"
+          floor-idx="{{index}}" floor-id="{{item.template_id}}"
+            floor-name="{{item.template_name}}"
+            floor-index="{{item.floorIndex}}">
+      </splitImage>
+
+        <image-list
+            wx:if="{{item.template_name === 'image_list' || item.template_name === 'twoPicture' || item.template_name === 'newSingleImage'}}"
+            floor-data="{{item}}">
+        </image-list>
+
+        <editor-talk
+            wx:if="{{item.template_name === 'editorTalk'}}"
+            floor-data="{{item}}">
+        </editor-talk>
+    </block>
+</view>

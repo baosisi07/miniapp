@@ -1,0 +1,39 @@
+.rootcontainer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.areacontainer {
+    width: 710rpx;
+    height: 100rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-bottom: 1rpx solid #b0b0b0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.areaname {
+    text-align: left;
+    flex: 1;
+    color: #444;
+    font-size: 34rpx;
+    margin-left: 10rpx;
+}
+
+.areacode {
+    margin-right: 10rpx;
+    color: #b0b0b0;
+    font-size: 34rpx;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}

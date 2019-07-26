@@ -1,0 +1,13 @@
+<wxs src="../../../wxs/helper.wxs" module="helper" />
+<view class="image-list-wrap" style="{{wrapStyle}}">
+    <block wx:for="{{imageList}}" wx:key="{{index}}">
+        <image
+        mode="widthFix"
+        src="{{helper.image(item.src, imageWidth, imageHeight)}}"
+        class="slide-image"
+        style="width: {{imagePercent}}%; margin-left: {{item.marginLeft || '0'}}%"
+        data-index="{{index}}"
+        bindtap="jumpTo"
+        />
+    </block>
+</view>

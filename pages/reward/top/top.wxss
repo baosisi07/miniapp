@@ -1,0 +1,166 @@
+page {
+    background-color: #f0f0f0;
+    height: 100%;
+}
+
+.reward-top-container {
+    font-size: 28rpx;
+    color: #444;
+    height: 100%;
+    overflow: hidden;
+}
+
+.reward-top-container .thumb > image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.top-tab-wrap {
+    padding: 30rpx 0;
+    background-color: #fff;
+    font-size: 0;
+    text-align: center;
+}
+
+.top-tab-wrap .tab-block {
+    display: inline-block;
+    font-size: 0;
+    border: 1rpx solid #444;
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+
+.top-tab-wrap .tab-block .tab-item {
+    min-width: 184rpx;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+
+.top-tab-wrap .tab-block .tab-item > text {
+    font-size: 28rpx;
+    line-height: 72rpx;
+}
+
+.top-tab-wrap .tab-block .active {
+    color: #fff;
+    background-color: #444;
+    border-radius: 8rpx;
+}
+
+.my-reward {
+    height: 180rpx;
+    background-color: #fff;
+    padding: 40rpx 60rpx;
+    position: relative;
+}
+
+.my-reward .pull-wrap > view {
+    max-width: 40%;
+    padding-top: 14rpx;
+    line-height: 1.5;
+}
+
+.my-reward .pull-wrap .title {
+    font-size: 24rpx;
+    color: #b0b0b0;
+    margin-bottom: 16rpx;
+    font-weight: 300;
+}
+
+.my-reward .pull-wrap .content {
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    word-break: break-all;
+    line-height: 1.1;
+}
+
+.my-reward .pull-wrap .symbol {
+    font-size: 28rpx;
+}
+
+.my-reward .pull-left {
+    float: left;
+}
+
+.my-reward .pull-right {
+    float: right;
+    text-align: right;
+}
+
+.my-reward .user-info {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 28rpx;
+    text-align: center;
+}
+
+.my-reward .user-info .thumb {
+    width: 120rpx;
+    height: 120rpx;
+    background: url('https://img10.static.yhbimg.com/headimg/2013/11/28/09/01cae078abe5fe320c88cdf4c220212688.gif?imageView/2/w/100/h/100');
+    background-size: 100% 100%;
+    margin: 0 auto 20rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.top-list-wrap {
+    margin-top: 20rpx;
+}
+
+.top-list {
+    background-color: #fff;
+}
+
+.top-list .top-item {
+    padding: 30rpx;
+    line-height: 80rpx;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+
+.top-list .top-item .top-user {
+    display: flex;
+}
+
+.top-list .top-user .num {
+    width: 48rpx;
+    font-size: 36rpx;
+}
+
+.top-list .top-user .thumb {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url('https://img10.static.yhbimg.com/headimg/2013/11/28/09/01cae078abe5fe320c88cdf4c220212688.gif?imageView/2/w/100/h/100');
+    background-size: 100% 100%;
+    margin-right: 20rpx;
+}
+
+.top-list .top-user .name {
+    width: 200rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.top-list .top-item .middle {
+    line-height: 40rpx;
+    text-align: right;
+    font-size: 30rpx;
+}
+
+.top-list .top-item .middle .text {
+    font-size: 24rpx;
+    color: #b0b0b0;
+    font-weight: 300;
+}
+
+

@@ -1,0 +1,14 @@
+page {
+    background-color: #f0f0f0;
+}
+
+.bank-list-container {
+    font-size: 28rpx;
+    background-color: #fff;
+}
+
+.bank-item {
+    line-height: 80rpx;
+    padding-left: 30rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+}

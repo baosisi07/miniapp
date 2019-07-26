@@ -1,0 +1,22 @@
+<view class="top-box">
+    <text class="tip">请将下列图片点击翻转至正向朝上</text>
+    <text class="refresh" bindtap="refreshImage">换一批</text>
+</view>
+<view class="image-check-box">
+    <view class="image-box">
+        <image class="image image-0 image-margin-{{imageClass[0]}}" src="{{imageSrc}}" bindtap="changeDirection"
+               id="image-0"></image>
+    </view>
+    <view class="image-box">
+        <image class="image image-1 image-margin-{{imageClass[1]}}" src="{{imageSrc}}" bindtap="changeDirection"
+               id="image-1"></image>
+    </view>
+    <view class="image-box">
+        <image class="image image-2 image-margin-{{imageClass[2]}}" src="{{imageSrc}}" bindtap="changeDirection"
+               id="image-2"></image>
+    </view>
+    <view class="image-box">
+        <image class="image image-3 image-margin-{{imageClass[3]}}" src="{{imageSrc}}" bindtap="changeDirection"
+               id="image-3"></image>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "商品详情",
+    "usingComponents": {
+      "product-banner": "/components/product/detail/banner",
+      "product-list": "/components/product/list",
+      "share-board": "/components/layout/share-board/share-board",
+      "snapshoot": "/components/layout/snapshoot/snapshoot"
+    }
+}

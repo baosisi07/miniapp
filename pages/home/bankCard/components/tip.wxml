@@ -1,0 +1,15 @@
+<view class="modal" bindtap="hide">
+  <view class="mark"></view>
+  <view class="modal-content" catchtap='show'>
+    <view class="title">提示</view>
+    <view class="content">
+      <view class="txt">如何查询银行卡开户行？</view>
+      <view><text class="txt">第一种：</text>手机银行查询。现在银行基本上都有属于自己的APP，用户下载后，登录手机银行，打开我的账号，就能查到开户行信息了。</view>
+      <view><text class="txt">第二种：</text>网银查询。网银查询跟手机银行差不多，都是通过网络查询，只要能上网，随时随地都可以查到开户行的信息。网银查询，前提是需要用户本已经开通了网上银行账号，然后上网搜找到自己银行卡的官网，比如工商银行，打开官网“中国工商银行中国网站”，进入登录个人网上银行后，点击我的账户-账务查询-账户开户-开户行信息，就可以看到开户行信息。</view>
+      <view><text class="txt">第三种：</text>微信公众号查询。打开微信，点一下右上角“+”号，点击添加朋友，再点击公众号，输入银行卡所属银行名称，关注后发送“开户行”就能轻松查询。</view>
+      <view><text class="txt">第四种：</text>电话查询。拿出自己的银行卡，卡的反面有写明客服电话，拨打后转接人工服务，询问客服人员该卡的开户行是什么，等待回复。</view>
+      <view><text class="txt">第五种：</text>营业厅查询。这种方式，是最多人选择的。但要记得带上身份证和银行卡前往营业厅，排队取号在柜台进行查询，有的银行也可以直接在大厅进行查询。</view>
+    </view>
+    <view class="footer" bindtap='hide'>我知道了</view>
+  </view>
+</view>

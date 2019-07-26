@@ -1,0 +1,51 @@
+<wxs src="../../../wxs/helper.wxs" module="helper"></wxs>
+
+<view class="reward-top-container">
+    <view class="top-tab-wrap">
+        <view class="tab-block">
+            <block wx:for="{{tabList}}" wx:key="{{index}}">
+                <view class="tab-item {{item.type == activeTab ? 'active' : ''}}" data-type="{{item.type}}" bindtap="changeRewardType">
+                    <text>{{item.name}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="my-reward">
+        <view class="pull-wrap">
+            <view class="pull-right">
+                <view class="title">排名</view>
+                <view class="content">{{topNum}}</view>
+            </view>
+            <view class="pull-left">
+                <view class="title">{{rewardTitle}}</view>
+                <view class="content"><text class="symbol">¥</text>{{rewardPrice}}</view>
+            </view>
+        </view>
+        <view class="user-info">
+            <view class="thumb">
+                <image wx:if="{{userThumb}}" src="{{helper.image(userThumb, 100, 100)}}" class=""></image>
+            </view>
+            <view class="user-name">{{userName}}</view>
+        </view>
+    </view>
+
+    <scroll-view id="top-list-wrap" scroll-y scroll-top="{{listScrollTop}}" class="top-list-wrap" style="height: {{listHeight}}px" bindscrolltolower="loadTopList">
+        <view class="top-list">
+            <view wx:for="{{topList}}" wx:key="{{index}}" class="top-item">
+                <view class="top-user">
+                    <view class="num">{{item.rankNum}}</view>
+                    <view class="thumb">
+                        <image wx:if="{{item.image}}" src="{{helper.image(item.image, 100, 100)}}" class=""></image>
+                    </view>
+                    <view class="name">{{item.nickname}}</view>
+                </view>
+                <view class="top-reward">
+                    <view class="middle">
+                        <view class="price">{{item.amountStr}}</view>
+                        <view class="text">{{rewardTitle}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

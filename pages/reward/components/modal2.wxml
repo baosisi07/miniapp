@@ -1,0 +1,19 @@
+<view class="confirm">
+  <view class="confirm-wrap">
+    <view class="confirm-content">
+      <view class="item-wrapper">
+        <view class="item">税后总收益：<text class="red">{{data.afterTaxAmountStr}}</text></view>
+        <view class="item">提现总金额：<text class="black">{{data.settlementAmountStr}}</text></view>
+        <view class="item">扣税总金额：<text class="black">{{data.taxAmountStr}}</text></view>
+      </view>
+
+      <view class="desc" bindtap="goDesc">
+        结算收益时需按照国家规定预扣个税，点击查看<text class="blue">《提现扣税规则说明》</text>
+      </view>
+    </view>
+    <view class="confirm-btns">
+      <view class="cancel-btn confirm-btn" bindtap="cancel">取消</view>
+      <view class="sure-btn confirm-btn" bindtap="confirm">确认提现</view>
+    </view>
+  </view>
+</view>

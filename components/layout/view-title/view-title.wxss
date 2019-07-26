@@ -1,0 +1,39 @@
+
+.view-title {
+    font-size: 0;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+}
+
+.view-title .title-text {
+    position: relative;
+    font-family: PingFang-SC-Semibold;
+    font-size: 28rpx;
+    color: #222;
+    letter-spacing: -0.34px;
+}
+
+.view-title .title-text:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -40rpx;
+    display: inline-block;
+    margin-top: -2rpx;
+    height: 4rpx;
+    width: 20rpx;
+    background-color: #222;
+}
+
+.view-title .title-text:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -40rpx;
+    margin-top: -2rpx;
+    display: inline-block;
+    height: 4rpx;
+    width: 20rpx;
+    background-color: #222;
+}

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "我的银行卡",
+    "usingComponents": {
+        "copyright": "/components/layout/copyright/copyright",
+        "tip": "./components/tip"
+    }
+}

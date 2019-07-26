@@ -1,0 +1,41 @@
+<view class="detail-container">
+    <view class='topContainer'>
+        <product-banner image-list="{{productImages}}" product-name="{{productName}}" sale-price="{{salesPrice}}"></product-banner>
+    </view>
+    <view class="product-detail">
+        <text class="name">{{productName}}</text>
+        <view class="price">
+            <text class="sales-price-symbol">￥</text>{{collagePrice || salesPrice}}
+            <view wx:if="{{marketPrice}}" class="market-price">￥{{marketPrice}}</view>
+            <view class="item-collage" wx:if="{{collagePrice}}">拼团价</view>
+        </view>
+    </view>
+
+    <view class="split-line"></view>
+
+    <view wx:if="{{rebatePhrase}}" class="rebate-phrase">{{rebatePhrase}}</view>
+
+    <view class="module-title">
+        <text class="text">查看其他推荐商品</text>
+    </view>
+
+    <view class="list-wrap">
+        <product-list list="{{similerList}}"></product-list>
+    </view>
+</view>
+
+<view class="bottom-action-wrap">
+    <button wx:if="{{!isLogin}}" class="login-hide-btn" open-type="getUserInfo" bindgetuserinfo="tapToLogin"></button>
+    <view class="share-detail-btn option-btn" bindtap="goProductShare">分享可赚￥{{collageRebatesPrice || rebatesAmount}}</view>
+    <view class="view-detail-btn option-btn" bindtap="goProductDetail">查看商品详情</view>
+    <view class="extra-action">
+        <view class="like-action" bindtap="setProductFav">
+            <text class="iconfont icon-yoho-like {{isFav ? 'red' : ''}}"></text>
+            <text class="name">收藏</text>
+        </view>
+    </view>
+</view>
+
+<share-board timestamp="{{tollageShareBoard}}" options="{{shareBoard}}"></share-board>
+<snapshoot timestamp="{{tollageSnapshoot}}" options="{{snapshoot}}"></snapshoot>
+

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "上传身份证",
+  "usingComponents": {
+    "upload": "./components/upload"
+  }
+}

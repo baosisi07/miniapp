@@ -1,0 +1,43 @@
+/* pages/home/bankCard/components/tip.wxss */
+
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.50);
+  z-index: 100;
+}
+
+.modal-content {
+  position: absolute;
+  width: 540rpx;
+  height: 644rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10rpx;
+}
+
+.title, .footer {
+  color: #D0021B;
+  font-size: 34rpx;
+  height: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  font-weight: bold;
+}
+
+.content {
+  height: 460rpx;
+  overflow: auto;
+  padding: 0 60rpx;
+}
+
+.txt {
+  font-weight: bold;
+}

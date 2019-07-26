@@ -1,0 +1,9 @@
+<scroll-view scroll-y style="height: {{windowHeight}}px" class="msg-container" bindscrolltolower="lower">
+    <view wx:for="{{msgList}}" wx:key="{{index}}" class="msg-item" data-url="{{item.url}}" bindtap="jumpToUrl">
+        <view class="thumb">
+            <image src="{{item.image}}"></image>
+        </view>
+        <view class="title">{{item.content}}</view>
+        <view class="time">{{item.createTime}}</view>
+    </view>
+</scroll-view>

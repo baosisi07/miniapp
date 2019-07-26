@@ -1,0 +1,57 @@
+/* pages/home/idCard/components/upload.wxss */
+
+.upload {
+  width: 324rpx;
+  height: 202rpx;
+  border: 2rpx dashed #E0E0E0;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploaded {
+  border: 2rpx solid white;
+}
+
+.btn {
+  text-align: center;
+}
+
+.image_btn {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.tip {
+  font-size: 28rpx;
+  color: #B0B0B0;
+}
+
+.tumb {
+  width: 320rpx;
+  height: 200rpx;
+}
+
+.clear_btn {
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.progress_wrapper {
+  width: 80%;
+  height: 20rpx;
+  background: ghostwhite;
+  border-radius: 5rpx;
+}
+
+.progress {
+  height: 100%;
+  background: gold;
+}

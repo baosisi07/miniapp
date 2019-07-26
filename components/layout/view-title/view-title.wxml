@@ -1,0 +1,4 @@
+<view class="view-title" style="{{style}}">
+    <span class="title-text">{{title}}</span>
+</view>
+

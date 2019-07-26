@@ -1,0 +1,20 @@
+<!--pages/home/idCard/components/upload.wxml-->
+
+
+<view class="upload {{file_url ? 'uploaded' : ''}}" bindtap="onClickFile">
+  <view wx:if="{{progress}}" class="progress_wrapper">
+    <view class="progress" style="width: {{progress + '%'}}"></view>
+  </view>
+
+  <block wx:else>
+    <block wx:if="{{file_url}}">
+      <image src="{{file_url}}" class="tumb"></image>
+      <image class="clear_btn" src="/static/images/clear@2x.png" catchtap="onClickClear"></image>
+    </block>
+
+    <view wx:else class="btn">
+      <image class="image_btn" src="/static/images/idcard_add@2x.png"></image>
+      <view class="tip">{{tip}}</view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "有货推手",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "resources": "/components/resources/resources",
+        "copyright": "/components/layout/copyright/copyright",
+        "quick-navigation": "/components/layout/quick-navigation/quick-navigation",
+        "product-list": "/components/product/list",
+        "coat":"/components/coat/coat"
+    }
+}

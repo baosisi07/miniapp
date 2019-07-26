@@ -1,0 +1,57 @@
+<view class="reward-detail-container">
+    <view class="reward-status">{{statusStr}}</view>
+    <view class="detail-wrap">
+        <block wx:if="{{activity}}">
+            <view class="row">
+                <view class="title">活动名称：</view>
+                <view class="info">{{activity.activityName}}</view>
+            </view>
+            <view class="row">
+                <view class="title">活动时间：</view>
+                <view class="info">{{activity.timeStr}}</view>
+            </view>
+            <view class="row">
+                <view class="title">收益金额：</view>
+                <view class="info red">{{activity.amountStr}}</view>
+            </view>
+            <view class="row">
+                <view class="title">订单编号：</view>
+                <view class="info">
+                    <view wx:for="{{activity.ordercodes}}" wx:key="{{index}}">{{item}}</view>
+                </view>
+            </view>
+        </block>
+
+        <block wx:if="{{order}}">
+            <view class="row">
+                <view class="title">下单编号：</view>
+                <view class="info">{{order.orderCode}}</view>
+            </view>
+            <view class="row">
+                <view class="title">下单时间：</view>
+                <view class="info">{{order.orderTimeStr}}</view>
+            </view>
+            <view class="row">
+                <view class="title">商品金额：</view>
+                <view class="info">{{order.lastOrderAmountStr}}</view>
+            </view>
+            <view class="row">
+                <view class="title">佣金金额：</view>
+                <view class="info red">{{order.amountStr}}</view>
+            </view>
+        </block>
+    </view>
+
+    <view wx:if="{{productList}}" class="product-list">
+        <view wx:for="{{productList}}" wx:key="{{index}}" class="pro-item">
+            <image src="{{item.image}}" class="thumb"></image>
+            <view class="item-cell-name">
+                <text class="pro-name">{{item.productName}}</text>
+            </view>
+            <view class="item-cell-extra">
+                <view class="pro-price red">{{item.priceStr}}</view>
+                <view class="pro-num">× {{item.num}}</view>
+            </view>
+        </view>
+    </view>
+</view>

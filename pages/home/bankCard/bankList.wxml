@@ -1,0 +1,7 @@
+<view class="bank-list-container">
+    <block  wx:for="{{bankList}}" wx:key="{{index}}">
+        <view class="bank-item" data-code="{{item.bankCode}}" data-name="{{item.bankName}}" bindtap="chooseBank">
+            <text class="name">{{item.bankName}}</text>
+        </view>
+    </block>
+</view>

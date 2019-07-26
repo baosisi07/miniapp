@@ -1,0 +1,13 @@
+<view class="coat" hidden="{{!isShow}}"></view>
+<image class="close" hidden="{{!isShow}}" wx:if="{{coatType == 0}}" src="/static/images/close@2x.png"
+       catchtap='hideTip'></image>
+<image src="{{url}}" hidden="{{!isShow}}" wx:if="{{coatType == 0}}" mode="aspectFit" class="tip-img"
+       catchtap="jumpTo"></image>
+
+<view class="tip" wx:if="{{coatType == 1}}" hidden="{{!isShow}}">
+    <image class="tip-image" src="/static/images/TIPS@2x.png"></image>
+    <view class="title">{{tip.title}}</view>
+    <view class="content">{{tip.content}}</view>
+    <view class="bottom" catchtap='hideTip'>{{tip.bottom}}</view>
+</view>
+<view class="mask" catchtap="showDialog" hidden="{{coatType ==2 }}"></view>

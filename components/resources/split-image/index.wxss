@@ -1,0 +1,27 @@
+.split-image {
+    font-size: 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.split-item {
+  position: relative;
+    flex: 1;
+}
+.urlContent {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 111;
+}
+.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

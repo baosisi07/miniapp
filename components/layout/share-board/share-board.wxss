@@ -1,0 +1,78 @@
+.share-board-mask {
+    background-color: #000;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+}
+
+.share-board-action {
+    padding: 50rpx 60rpx 0;
+    width: 100%;
+    background-color: #fff;
+    font-size: 28rpx;
+    position: fixed;
+    bottom: -300px;
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+.share-board-action .top-image {
+    margin-bottom: 60rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+
+.share-board-action .top-image image {
+    width: 100%;
+    display: block;
+}
+
+.share-board-action .action-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 56rpx;
+}
+
+.share-board-action .action-list .action-item {
+    min-width: 180rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.share-board-action .action-item .icon {
+    width: 90rpx;
+    height: 90rpx;
+    margin-bottom: 24rpx;
+}
+
+.share-board-action .action-item .icon image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.share-board-action .action-item .name {
+    font-size: 24rpx;
+    color: #333;
+}
+
+.share-board-action .action-item .share-btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.share-board-action .cancel-btn {
+    border-top: 1rpx solid #f0f0f0;
+    line-height: 90rpx;
+    text-align: center;
+}

@@ -1,0 +1,3 @@
+<view class="bottom-copyright" wx:if="{{delayShow}}">
+    <image class="image" src="../../../static/images/yoho!buy@2x.png"></image>
+</view>

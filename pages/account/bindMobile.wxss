@@ -1,0 +1,141 @@
+.bind-mobile {
+    padding: 110rpx 72rpx;
+    font-family: PingFang-SC-Regular, sans-serif;
+    border-top: 1rpx solid #e0e0e0;
+}
+
+.bind-mobile .btn {
+    text-align: center;
+    height: 98rpx;
+    font-size: 36rpx;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 98rpx;
+    background: #b0b0b0;
+    border-radius: 10rpx;
+}
+
+.bind-mobile .title {
+    font-family: PingFangSC-Medium, sans-serif;
+    margin-bottom: 30rpx;
+    font-size: 48rpx;
+    color: #222;
+    letter-spacing: 0;
+}
+
+.bind-mobile .tip {
+    font-size: 22rpx;
+    color: #b0b0b0;
+    letter-spacing: 0;
+}
+
+.bind-mobile .field {
+    position: relative;
+    height: 125rpx;
+    border-bottom: 1rpx solid #e0e0e0;
+}
+
+.bind-mobile .area {
+    position: absolute;
+    bottom: 27rpx;
+    font-size: 28rpx;
+    color: #222;
+    letter-spacing: 0;
+}
+
+.bind-mobile .area .name {
+    padding-left: 30rpx;
+}
+
+.bind-mobile .area-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 30rpx;
+    width: 14rpx;
+    height: 24rpx;
+}
+
+.bind-mobile .area-code {
+    position: absolute;
+    bottom: 0;
+    font-size: 28rpx;
+    color: #222;
+    letter-spacing: 0;
+    line-height: 80rpx;
+}
+
+.bind-mobile .area-code:after {
+    position: absolute;
+    top: 50%;
+    right: -28rpx;
+    margin-top: -4rpx;
+    display: inline-block;
+    content: "";
+    border-width: 8rpx 8rpx 0 8rpx;
+    border-color: #444 transparent transparent transparent;
+    border-style: solid;
+}
+
+.bind-mobile .label {
+    position: absolute;
+    bottom: 0;
+    font-size: 28rpx;
+    color: #222;
+    letter-spacing: 0;
+    height: 80rpx;
+    min-height: 80rpx;
+    line-height: 80rpx;
+}
+
+.bind-mobile .field-input {
+    position: absolute;
+    bottom: 0;
+    left: 115rpx;
+    font-size: 28rpx;
+    color: #222;
+    letter-spacing: 0;
+    height: 80rpx;
+    min-height: 80rpx;
+}
+
+.bind-mobile .field-input.code {
+    display: inline-block;
+    width: 240rpx;
+}
+
+.bind-mobile .field .send-code {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50rpx;
+    padding: 0 16rpx;
+    margin-bottom: 23rpx;
+    font-size: 22rpx;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 50rpx;
+    background: #b0b0b0;
+    border-radius: 30rpx;
+}
+
+.bind-mobile .field .send-code.active {
+    background-color: #444;
+}
+
+.bind-mobile .auto-bind {
+    background: #444;
+}
+
+.bind-mobile .confirm {
+    margin-top: 86rpx;
+    margin-bottom: 30rpx;
+}
+
+.bind-mobile .confirm.active {
+    background-color: #444;
+}
+
+.bind-mobile .image-check {
+    display: block;
+    margin-top: 20rpx;
+}

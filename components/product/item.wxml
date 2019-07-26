@@ -1,0 +1,13 @@
+<wxs src="../../wxs/helper.wxs" module="helper" />
+<view class="product-item" bindtap="goDetail" data-skn="{{item.product_skn}}" data-cprice="{{item.collage_price || ''}}" data-crebates="{{item.collage_rebates_amount || ''}}">
+    <image class="item-image" mode="aspectFit" src="{{helper.image(item.default_images, 860, 644)}}"></image>
+    <view class="item-detail">
+        <text class="item-title">{{item.product_name}}</text>
+        <text class="item-price">￥{{item.collage_price || item.sales_price}}</text>
+        <view class="item-collage" wx:if="{{item.collage_price}}">拼团价</view>
+        <view class="item-rebate">
+            <view class="go-share">去分享</view>
+            <view class="rebate-price">最高返￥{{item.collage_rebates_amount || item.rebates_amount}}</view>
+        </view>
+    </view>
+</view>

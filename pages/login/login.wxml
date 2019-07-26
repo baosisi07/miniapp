@@ -1,0 +1,9 @@
+<!--pages/account/login/login.wxml-->
+<view class="login-container">
+  <image class="logo" src="/static/images/home-logo.png"></image>
+  <view class="login-buttons">
+    <view class="to-login">{{loginText}}</view>
+    <login-button class="login-area auto-btn" openType="{{loginButtonType}}"></login-button>
+  </view>
+  <view class="login-tips">{{loginTips}}</view>
+</view>

@@ -1,0 +1,192 @@
+page {
+    background-color: #f0f0f0;
+}
+
+.bank-card-container {
+    font-size: 28rpx;
+}
+
+.card-info {
+    background-color: #333;
+    color: #fff;
+    margin: 60rpx 80rpx;
+    border-radius: 8rpx;
+    padding: 40rpx;
+}
+
+.card-info .bank-name,
+.card-info .card-id {
+    font-size: 36rpx;
+    font-weight: 700;
+    margin-bottom: 40rpx;
+}
+
+.card-info .card-id {
+    display: flex;
+    justify-content: space-between;
+}
+
+.change-tip {
+    color: #444;
+    text-align: center;
+}
+
+.phone-num {
+    text-align: center;
+    color: #cd0b21;
+    margin-top: 4rpx;
+    text-decoration: underline;
+}
+
+.add-card {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin: 60rpx 80rpx;
+    border-radius: 8rpx;
+    padding: 80rpx 0;
+}
+
+.add-card .title {
+    width: 100%;
+    display: inline-block;
+}
+
+.add-card .button {
+    padding: 10rpx 40rpx;
+    border: 2rpx solid #fff;
+    border-radius: 4rpx;
+    margin-top: 50rpx;
+    display: inline-block;
+}
+
+.add-form .tip {
+    padding: 0 30rpx;
+    line-height: 80rpx;
+    margin-top: 20rpx;
+}
+
+.add-form .form-wrap {
+    font-size: 28rpx;
+    background-color: #fff;
+    margin-bottom: 50rpx;
+}
+
+.add-form .form-row {
+    line-height: 80rpx;
+    padding: 0 30rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid #f0f0f0;
+    position: relative;
+}
+
+.add-form .form-row .cell-left {
+    width: 160rpx;
+}
+
+.add-form .form-row .cell-right {
+    width: 500rpx;
+    line-height: 80rpx;
+}
+
+.add-form .form-row .tap-act {
+    width: 72%;
+    height: 100%;
+    padding-right: 30rpx;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    z-index: 10;
+}
+
+.add-form .form-row .iconfont {
+    font-size: 40rpx;
+}
+
+.add-form .save-btn {
+    background-color: #444;
+    color: #fff;
+    margin: 30rpx;
+}
+
+.confirm {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.confirm .confirm-wrap {
+    width: 540rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+}
+
+.confirm .confirm-wrap .title {
+    text-align: center;
+    font-size: 34rpx;
+    color: #cd0b21;
+    font-weight: 700;
+    line-height: 80rpx;
+    margin-top: 20rpx;
+}
+
+.confirm .confirm-wrap .confirm-content {
+    padding: 0 50rpx;
+    color: #444;
+}
+
+.confirm .confirm-wrap .main-tip {
+    text-align: center;
+    margin-bottom: 40rpx;
+    line-height: 1.6;
+}
+
+.confirm .confirm-wrap .sub-tip {
+    font-size: 24rpx;
+    color: #b0b0b0;
+    margin-left: 32rpx;
+}
+
+.confirm .confirm-wrap .confirm-btns {
+    margin-top: 40rpx;
+    line-height: 90rpx;
+    border-top: 1rpx solid #eee;
+    display: flex;
+}
+
+.confirm .confirm-wrap .confirm-btn {
+    flex-grow: 1;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+.confirm .confirm-wrap .sure-btn {
+    color: #cd0b21;
+    border-right: 1rpx solid #eee;
+}
+
+
+.error-tip {
+  margin: 30rpx;
+  color: #cd0b21;
+}
+
+.tip-image {
+  margin-top: 24rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.rm-width {
+  width: 50rpx !important;
+}

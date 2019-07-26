@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "开户行",
+    "usingComponents": {
+        "copyright": "/components/layout/copyright/copyright"
+    }
+}

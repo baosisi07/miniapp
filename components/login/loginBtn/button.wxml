@@ -1,0 +1,10 @@
+<block wx:if="{{openType === 'tapGoLogin'}}">
+  <button bindtap="tapGoLogin" class="user-button-type">
+    <slot/>
+  </button>
+</block>
+<block wx:elif="{{openType}}">
+  <button open-type="{{openType}}" bindgetphonenumber="getPhoneNumber" bindgetuserinfo="tapToLogin" class="user-button-type">
+    <slot/>
+  </button>
+</block>

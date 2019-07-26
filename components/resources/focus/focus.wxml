@@ -1,0 +1,26 @@
+<wxs src="../../../wxs/helper.wxs" module="helper" />
+<view class="resource-focus">
+    <swiper class="swiper-wrapper" indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+            circular="{{circular}}" bindchange="swiperChange">
+        <block wx:for="{{swiperList}}" wx:key="{{index}}">
+            <swiper-item>
+                <anchor
+                    bindclickreport="report"
+                    url="{{item.url}}" 
+                    floor-id="{{floorId}}" 
+                    floor-name="{{floorName}}"
+                    floor-url="{{item.url}}"
+                    floor-index="{{floorIndex}}" 
+                    floor-item-index="{{index + 1}}">
+                    <image mode="widthFix" src="{{helper.image(item.src, 750, 480)}}" class="slide-image"/>
+                </anchor>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="dots">
+        <block wx:for="{{swiperList}}" wx:key="unique">
+            <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+        </block>
+    </view>
+</view>

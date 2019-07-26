@@ -1,0 +1,55 @@
+<wxs src="../../wxs/helper.wxs" module="helper"></wxs>
+
+<view class="me-container">
+    <button wx:if="{{!isLogin}}" class="login-hide-btn"  bindtap="tapToLogin"></button>
+    <view class="header">
+        <view class="user-avatar">
+            <image wx:if="{{userAvatar}}" src="{{helper.image(userAvatar, 100, 100)}}" class=""></image>
+        </view>
+        <view class="username">{{userName}}</view>
+    </view>
+
+    <view wx:if="{{coatType}}" class="my-bank-card tap-bar" bindtap="goBankCard">
+        <text class="left-title">我的银行卡</text>
+        <view class="right-option">
+            <text wx:if="{{isBindBankCard}}">已绑定</text>
+            <text wx:else class="red">未绑定</text>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+
+    <view wx:if="{{coatType}}" class="my-bank-card tap-bar my-id-card" bindtap="goIdCard">
+        <text class="left-title">我的身份证</text>
+        <view class="right-option">
+            <text wx:if="{{isUploadedIdCard}}">已上传</text>
+            <text wx:else class="red">未上传</text>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+
+    <view class="my-bank-card tap-bar" bindtap="goFriends">
+        <text class="left-title">邀请好友数</text>
+        <view class="right-option">
+            <text>{{inviteNum}}</text>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+
+
+    <view class="tap-group">
+        <block wx:for="{{optionList}}" wx:key="{{index}}">
+          <block wx:if="{{item.template_name == 'textNav'}}" wx:key="{{index}}">
+            <view class="tap-bar" data-url="{{item.data[0].url}}" bindtap="jumpToUrl">
+              <text class="left-title">{{item.data[0].name}}</text>
+              <view class="right-option">
+                <text class="iconfont icon-right"></text>
+              </view>
+            </view>
+          </block>
+           <block wx:if="{{item.template_name == 'newSingleImage'}}" wx:key="{{index}}">
+              <image src="{{helper.image(item.data.list[0].src, item.data.imageWidth, item.data.imageHeight)}}" class="newSingleImage" data-url="{{item.data.list[0].url}}"  bindtap="jumpToUrl"></image>
+          </block>
+        </block>
+    </view>
+</view>
+

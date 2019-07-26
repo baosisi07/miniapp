@@ -1,0 +1,58 @@
+.login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    width: 366rpx;
+    height: 312rpx;
+    margin-top: 244rpx;
+}
+
+.login-buttons {
+    position: relative;
+    width: 540rpx;
+    height: 88rpx;
+    margin-top: 202rpx;
+}
+
+.login-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 540rpx;
+    height: 88rpx;
+}
+
+.login-area.auto-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.login-area.auto-btn:after {
+    border: none;
+}
+
+.login-tips {
+    width: 540rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    color: #b0b0b0;
+    margin-top: 16rpx;
+    text-align: center;
+}
+
+.to-login {
+    height: 100%;
+    line-height: 88rpx;
+    color: #fff;
+    font-size: 32rpx;
+    letter-spacing: 8rpx;
+    text-align: center;
+    background-color: #000;
+    border-radius: 50rpx;
+}

@@ -1,0 +1,24 @@
+.edit-talk {
+    height: 180rpx;
+    line-height: 1.7;
+    background-image: url("https://img12.static.yhbimg.com/sns/2018/09/25/16/024ae7333aa95114d145bfddb050ce1da5.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.edit-talk .red {
+    color: #f44e40;
+}
+
+.edit-talk .title {
+    font-size: 34rpx;
+    padding: 24rpx 0 4rpx;
+}
+
+.edit-talk .sub-title {
+    font-size: 24rpx;
+}
+
+.edit-talk .content {
+    font-size: 20rpx;
+}

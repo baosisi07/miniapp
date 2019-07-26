@@ -1,0 +1,59 @@
+<view class="reward-list-container">
+    <view class="tabs-wrap">
+        <view class="tab-list">
+            <block wx:for="{{tabList}}" wx:key="{{index}}">
+                <view class="tab-item" data-type="{{item.type}}" bindtap="changeRewardType">
+                    <text class="tab-name {{item.type == activeTab ? 'active' : ''}}">{{item.name}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="types-wrap">
+        <view class="types-content">
+            <view class="type-list">
+                <block wx:for="{{typeList}}" wx:key="{{index}}">
+                    <view class="type-item {{item.type == activeType ? 'active' : ''}}" data-type="{{item.type}}" bindtap="changeRewardStatusType">{{item.name}}</view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <scroll-view id="orders-wrap" scroll-y class="orders-wrap" style="height: {{listHeight}}px" bindscrolltolower="scrolltolower">
+        <view wx:for="{{orderList}}" wx:key="{{index}}" class="order-item">
+            <view class="left-text">
+                <text class="title">{{item.showName}}</text>
+                <view class="time">
+                    {{item.orderTimeStr}}
+
+                    <text wx:if="{{item.isNew == 1}}" class="new">新客订单</text>
+                </view>
+            </view>
+            <view class="right-text">
+                <view class="middle">
+                    <text class="amount">{{item.amountStr}}</text>
+                    <view wx:if="{{item.status == 10}}" class="status">待结算</view>
+                    <view wx:elif="{{item.status == 40}}" class="status">已提现</view>
+                </view>
+
+            </view>
+        </view>
+    </scroll-view>
+    <!-- <scroll-view id="orders-wrap" scroll-y class="orders-wrap"  bindscrolltolower="scrolltolower">
+        <view  class="order-item">
+            <view class="left-text">
+                <text class="title">item.showName</text>
+                <view class="time">
+                    item.orderTimeStr
+
+                    <text class="new">新客订单</text>
+                </view>
+            </view>
+            <view class="right-text">
+                <view class="middle">
+                    <text class="amount">item.amountStr</text>
+                    <view class="status">item.status == 10</view>
+                </view>
+
+            </view>
+        </view>
+    </scroll-view> -->
+</view>

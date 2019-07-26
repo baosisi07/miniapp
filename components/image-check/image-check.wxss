@@ -1,0 +1,62 @@
+.top-box {
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip {
+  color: #444;
+  font-size: 28rpx;
+}
+
+.refresh {
+  font-size: 28rpx;
+  color: #d0021b;
+}
+
+.image-check-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.image-box {
+  width: 140rpx;
+  height: 140rpx;
+  overflow: hidden;
+  border: solid 1px #e0e0e0;
+}
+
+.image {
+  width: 560rpx;
+  height: 560rpx;
+}
+
+.image-0 {
+  margin-left: 0;
+}
+
+.image-1 {
+  margin-left: -140rpx;
+}
+
+.image-2 {
+  margin-left: -280rpx;
+}
+
+.image-3 {
+  margin-left: -420rpx;
+}
+
+.image-margin-140 {
+  margin-top: -140rpx;
+}
+
+.image-margin-280 {
+  margin-top: -280rpx;
+}
+
+.image-margin-420 {
+  margin-top: -420rpx;
+}

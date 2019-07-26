@@ -1,0 +1,66 @@
+<view class="bank-card-container">
+
+    <view wx:if="{{isEdit}}" class="add-form">
+        <view class="tip">请添加持卡人本人银行卡</view>
+
+        <view class="form-wrap">
+            <view wx:for="{{formList}}" wx:key="{{index}}" class="form-row">
+                <text class="cell-left">{{item.title}}</text>
+                <input class="cell-right" data-type="{{item.type}}" placeholder-style="color: #b0b0b0;" placeholder="{{item.placeholder}}" bindinput="onInputChanged" value="{{item.value}}"/>
+                <view wx:if="{{item.tapGo}}" class="tap-act" data-type="{{item.tapGo}}" bindtap="{{item.tapGo}}">
+                    <text class="iconfont icon-right"></text>
+                </view>
+
+                <view wx:if="{{item.tapTip}}" class="tap-act rm-width" data-type="{{item.tapTip}}" bindtap="{{item.tapTip}}">
+                    <image class="tip-image" src="/static/images/tip@3x.png"></image>
+                </view>
+            </view>
+        </view>
+
+        <view class="error-tip">{{errorTip}}</view>
+
+        <button class="save-btn" bindtap="saveBank">确定</button>
+
+        <view wx:if="{{confirmBank}}" class="confirm">
+            <view class="confirm-wrap">
+                <view class="title">提示</view>
+                <view class="confirm-content">
+                    <view class="main-tip">请确认您填写的银行信息，提交后只能致电客服修改</view>
+                    <view class="sub-tip">持卡人: {{confirmBank.name}}</view>
+                    <view class="sub-tip">身份证号: {{confirmBank.idCardNo}}</view>
+                    <view class="sub-tip">银行卡号: {{confirmBank.bankCardNo}}</view>
+                </view>
+                <view class="confirm-btns">
+                    <view class="sure-btn confirm-btn" bindtap="saveBankConfirmSure">确定</view>
+                    <view class="cancel-btn confirm-btn" bindtap="saveBankConfirmCancel">取消</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <block wx:else>
+        <block wx:if="{{bankCard}}">
+            <view class="card-info">
+                <view class="bank-name">{{bankCard.bankName}}</view>
+                <view class="card-id">
+                    <text>****</text>
+                    <text>****</text>
+                    <text>****</text>
+                    <text>****</text>
+                    <text>{{bankCard.bankCardNo}}</text>
+                </view>
+                <view class="user-name">持卡人：{{bankCard.name}}</view>
+            </view>
+
+            <view class="change-tip">更换银行卡请致电官方客服</view>
+            <view class="phone-num" bindtap="phoneCall">400-889-9646</view>
+        </block>
+
+        <view wx:else class="add-card" bindtap="tapToEdit">
+            <text class="title">没有绑定银行卡的用户将无法提现！</text>
+            <text class="button">添加银行卡</text>
+        </view>
+    </block>
+</view>
+
+<tip wx:if="{{showTip}}" bindhide="hideTip"></tip>

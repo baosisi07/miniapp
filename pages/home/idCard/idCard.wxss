@@ -1,0 +1,77 @@
+/* pages/home/idCard/idCard.wxss */
+
+page {
+  border-top: 2rpx solid #E0E0E0;
+}
+
+.upload_idcard {
+  padding: 0 30rpx;
+}
+
+.title {
+  margin-top: 40rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #444;
+}
+
+.desc {
+  font-size: 28rpx;
+  color: #b0b0b0;
+  line-height: 1.5;
+  margin: 20rpx 0;
+  display: flex;
+}
+
+
+.dot {
+  margin-top: 18rpx;
+  margin-left: 4rpx;
+  width: 6rpx;
+  height: 6rpx;
+  margin-right: 16rpx;
+  border-radius: 6rpx;
+  background: #B0B0B0;
+  vertical-align: middle;
+}
+
+
+.upload_wrapper {
+  width: 100%;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sample {
+  margin-top: 60rpx;
+  margin-bottom: 86rpx
+}
+
+.id_sample {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.id_item {
+  width: 160rpx;
+  height: 100rpx;
+}
+
+.tip {
+  font-size: 18rpx;
+  color: #999999;
+}
+
+.btn {
+  width: 100%;
+  height: 88rpx;
+  border-radius: 8rpx;
+  color:white;
+  background: #444;
+  font-size: 30rpx;
+  line-height: 88rpx;
+  text-align: center;
+}

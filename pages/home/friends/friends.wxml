@@ -1,0 +1,51 @@
+<!--pages/home/friends/friends.wxml-->
+<view class='container'>
+  <view class='topImageView'>
+    <image src="https://cdn.yoho.cn/app/yohogain/invite/banner.jpg" class="topImageView"></image>
+  </view>
+  <view class='spe'></view>
+
+  <view class='sort-list'>
+    <view class='sort-item'>
+      <text>我邀请的好友</text>
+    </view>
+    <view class='sort-item'>
+      <text>申请时间</text>
+    </view>
+    <view class='sort-item'>
+      <text>7天订单数</text>
+    </view>
+    <view class='sort-item'>
+      <text>7天订单金额</text>
+    </view>
+  </view>
+
+
+  <scroll-view id="list-wrap" scroll-y class="list-wrap" style="height: {{listHeight}}px" bindscrolltolower="scrolltolower">
+    <view wx:for="{{friendsList}}" wx:key="{{index}}" class="itemView">
+      <view class='list'>
+        <view class='item'>
+          <text class='itemText'>{{item.name}}</text>
+        </view>
+        <view class='item'>
+          <text class='itemText'>{{item.dateStr}}</text>
+        </view>
+        <view class='item'>
+          <text class='itemText'>{{item.orderNum}}</text>
+        </view>
+        <view class='item'>
+          <text class='itemText'>{{item.orderAmountStr}}</text>
+        </view>
+      </view>
+    </view>
+
+  </scroll-view>
+
+  <!-- <view class='button' bindtap="goShare">
+    <text>邀请好友加入有货推手/text>
+  </view> -->
+
+
+</view>
+<share-board timestamp="{{tollageShareBoard}}" options="{{shareBoard}}"></share-board>
+<snapshoot timestamp="{{tollageSnapshoot}}" options="{{snapshoot}}"></snapshoot>

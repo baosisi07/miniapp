@@ -1,0 +1,78 @@
+/* global getRegExp */
+var regExpWidth = getRegExp('{width}', 'g');
+var regExpHeight = getRegExp('{height}', 'g');
+var regExpMode = getRegExp('{mode}', 'g');
+var regExpQg = getRegExp('/q/d+', 'g');
+var regExpQ = getRegExp('/q/d+');
+var regExpQuality = getRegExp('/quality/d+');
+var regExpQualityg = getRegExp('/quality/d+', 'g');
+var regExpImageView = getRegExp('imageView');
+var regExpImageMogr = getRegExp('imageMogr');
+
+var defaultQuality = 75;
+
+function image(imgUrl, w, h, mode, q) {
+    var urls,
+        query,
+        url;
+
+    var params = {
+        w: w,
+        h: h,
+        mode: mode || 2,
+        q: q || defaultQuality
+    };
+
+    if (imgUrl && (typeof imgUrl === 'string')) {
+        urls = imgUrl.split('?');
+        query = urls[1] || '';
+        url = urls[0];
+
+        if (url.indexOf('http:') === 0) {
+            url = url.replace('http:', 'https:');
+        }
+
+        if (!query || query === 'imageslim') {
+            url += params.q === defaultQuality ? '?imageslim' : '?imageView2/0/interlace/1/q/' + params.q;
+            imgUrl = url;
+        } else {
+            imgUrl = imgUrl.replace(regExpWidth, params.w)
+                .replace(regExpHeight, params.h)
+                .replace(regExpMode, (params.mode));
+
+            if (regExpImageView.test(query)) { // imageView2 || imageView
+                if (!regExpQ.test(query)) {
+                    imgUrl += '/q/' + params.q;
+                } else {
+                    imgUrl = imgUrl.replace(regExpQg, '/q/' + params.q);
+                }
+            } else if (regExpImageMogr.test(query)) {
+                if (!regExpQuality.test(query)) {
+                    imgUrl += '/quality/' + params.q;
+                } else {
+                    imgUrl = imgUrl.replace(regExpQualityg, '/quality/' + params.q);
+                }
+            }
+        }
+        return imgUrl;
+    } else {
+        return '';
+    }
+}
+
+function round(num, precision) {
+    num = +num;
+
+    if (num !== 0 && (!num || isNaN(num))) {
+        return '';
+    }
+
+    precision = precision > 0 ? precision.toFixed() : 2;
+
+    return num.toFixed(precision);
+}
+
+module.exports = {
+    image: image,
+    round: round
+};

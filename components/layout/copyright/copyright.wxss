@@ -1,0 +1,11 @@
+.bottom-copyright {
+    height: 125rpx;
+    padding-top: 55rpx;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.bottom-copyright .image {
+    width: 222rpx;
+    height: 70rpx;
+}

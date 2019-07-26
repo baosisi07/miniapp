@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "邀请好友",
+  "usingComponents": {
+    "share-board": "/components/layout/share-board/share-board",
+    "snapshoot": "/components/layout/snapshoot/snapshoot"
+  }
+}

@@ -1,0 +1,54 @@
+<view class="reward-container">
+    <coat id="rewardCoat" from="reward"></coat>
+    <view class="reward-amount">
+        <view class="title">可提现金额</view>
+        <view class="reward-sum">
+            <text class="sum-symbol">￥</text>
+            <text class="sum">{{settlementAmount}}</text>
+            <button class="take-back" bindtap="checkBackCrash">提现</button>
+        </view>
+        <view class="tips">
+            <text class="iconfont icon-warn"></text>
+            每月20日结算上个月预估佣金，当月预估佣金在下个月20日结算
+        </view>
+    </view>
+
+    <navigator url="/pages/reward/extract/extract">
+        <view class="reward-history tap-bar">
+            <text class="left-title">已提现金额</text>
+            <view class="right-option">
+                ￥{{historySettlementAmount}}
+                <text class="iconfont icon-right"></text>
+            </view>
+        </view>
+    </navigator>
+
+    <navigator url="/pages/reward/list/list">
+        <view class="income-detail tap-bar">
+            <text class="left-title">全部佣金数据</text>
+            <view class="right-option">
+                <text class="iconfont icon-right"></text>
+            </view>
+        </view>
+    </navigator>
+
+    <view class="data-board">
+        <view class="tabs-wrap">
+            <block wx:for="{{tabList}}" wx:key="{{index}}">
+                <view class="tab-item" data-type="{{item.type}}" bindtap="changeBoardType">
+                    <text class="tab-name {{item.type == activeTab ? 'active' : ''}}">{{item.name}}</text>
+                </view>
+            </block>
+        </view>
+        <view class="data-wrap">
+            <view wx:for="{{cardList}}" wx:key="{{index}}" class="data-item">
+                <text class="info {{item.isPrice ? 'price' : ''}}">{{item.isPrice ? '￥' : ''}}{{item.info}}</text>
+                <text class="desc">{{item.desc}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<modal wx:if="{{showTip}}" bind:cancel="hide" bind:confirm="confirmIdCard"></modal>
+<modal2 wx:if="{{showDetail}}" data="{{detailInfo}}" bind:cancel="hide" bind:confirm="confirmWithdraw"></modal2>

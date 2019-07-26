@@ -1,0 +1,9 @@
+<view class="anchor"
+      data-floor_id="{{floorId}}"
+      data-floor_url="{{floorUrl}}"
+      data-floor_name="{{floorName}}"
+      data-floor_index="{{floorIndex}}"
+      data-floor_item_index="{{floorItemIndex}}"
+      bindtap="jumpTo">
+    <slot></slot>
+</view>

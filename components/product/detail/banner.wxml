@@ -1,0 +1,18 @@
+<wxs src="../../../wxs/helper.wxs" module="helper" />
+<view class='detail-banner'>
+    <swiper class="swiper-wrapper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+            interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange" circular="{{circular}}">
+        <block wx:for="{{imageList}}" wx:key="unique">
+            <swiper-item>
+                <image class="slide-image"
+                       data-src="{{helper.image(item.imageUrl, 750, 1000)}}" src="{{helper.image(item.imageUrl, 750, 1000)}}"
+                       mode="widthFix"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="dots">
+        <block wx:for="{{imageList}}" wx:key="unique">
+            <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+        </block>
+    </view>
+</view>

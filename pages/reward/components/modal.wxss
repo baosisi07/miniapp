@@ -1,0 +1,70 @@
+.confirm {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.confirm .confirm-wrap {
+  width: 540rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.confirm .confirm-wrap .title {
+  text-align: center;
+  font-size: 34rpx;
+  color: #cd0b21;
+  font-weight: 700;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.confirm .confirm-wrap .confirm-content {
+  padding: 0 60rpx;
+  color: #444;
+  font-size: 28rpx;
+}
+
+.confirm .confirm-wrap .main-tip {
+  text-align: center;
+  margin-bottom: 40rpx;
+  line-height: 1.6;
+}
+
+.confirm .confirm-wrap .sub-tip {
+  font-size: 24rpx;
+  color: #b0b0b0;
+  margin-left: 32rpx;
+}
+
+.confirm .confirm-wrap .confirm-btns {
+  margin-top: 40rpx;
+  line-height: 90rpx;
+  border-top: 1rpx solid #eee;
+  display: flex;
+  font-size: 34rpx;
+}
+
+.confirm .confirm-wrap .confirm-btn {
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.confirm .confirm-wrap .sure-btn {
+  font-weight: 600;
+  color: #cd0b21;
+}
+
+.cancel-btn {
+  color: #444;
+  border-right: 1rpx solid #eee;
+}

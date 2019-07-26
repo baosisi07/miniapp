@@ -1,0 +1,85 @@
+/* pages/inviteNew/inviteNew.wxss */
+.invite-activity-container {
+  font-size: 28rpx;
+  font-family: PingFang-SC-Regular, sans-serif;
+  padding-bottom: 120rpx;
+}
+.rules {
+  position: absolute;
+  z-index:222;
+  right: 0;
+  top: 25rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 180rpx;
+  font-size: 24rpx;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #eee;
+  border-bottom-left-radius: 50rpx;
+  border-top-left-radius: 50rpx;
+  opacity: 0;
+}
+.record-wrap {
+  background-color: #fff;
+  margin-top: 30rpx;
+  padding: 20rpx;
+  
+}
+.table-view {
+  min-height: 100rpx;
+  max-height: 760rpx;
+  /* overflow-y: auto; */
+}
+.record-title {
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.record-wrap .row {
+  display: flex;
+}
+.record-wrap .head {
+  color: #b0b0b0;
+}
+.record-wrap .head,
+.record-wrap .info {
+  
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: solid 1px #eee;
+}
+.invite-none {
+  color: #b0b0b0;
+  text-align: center;
+  padding: 120rpx 0;
+}
+.invite-btn {
+  background-color: #444;
+  color: #fff;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.login-hide-btn {
+  position: fixed;
+  z-index: 99;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100rpx;
+    background: none;
+    border: none;
+    opacity: 0;
+}
+.login-hide-btn:after {
+  border: none;
+}

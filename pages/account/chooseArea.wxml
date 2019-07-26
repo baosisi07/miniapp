@@ -1,0 +1,11 @@
+ <template name='area'>
+    <view class='areacontainer' bindtap='chooseArea' data-name='{{item.name}}' data-code='{{item.area}}'>
+        <view class='areaname'>{{item.name}}</view>
+        <view class='areacode'>+{{item.area}}</view>
+    </view>
+</template> 
+<view class='rootcontainer'>
+    <block wx:for='{{list}}'wx:key="{{index}}">
+        <template is='area' data="{{item}}"></template>
+    </block>
+</view>

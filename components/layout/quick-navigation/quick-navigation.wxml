@@ -1,0 +1,25 @@
+<view hidden="{{!show}}" class="quick-navigation" style="bottom:{{marginBottom}}rpx">
+    <view class="qn-menu-group" animation="{{menuAnimation}}">
+        <view class="hide-menu-group">
+            <view class="qn-menu" animation="{{homeAnimation}}" bindtap="jumpToHome">
+                <text class="menu-text">首页</text>
+            </view>
+            <view class="qn-menu" animation="{{searchAnimation}}" bindtap="jumpToSearch">
+                <text class="menu-text">搜索</text>
+            </view>
+            <view class="qn-menu" animation="{{shopcartAnimation}}" bindtap="jumpToShopCart">
+                <text class="menu-text">购物车</text>
+            </view>
+        </view>
+        <view class="switch-menu qn-menu" bindtap="switchMenu">
+            <text wx:if="{{isExpand}}" class="iconfont icon-cha menu-text"></text>
+            <view wx:else class="two-line-text">
+                <text class="menu-text">快捷</text>
+                <text class="menu-text">导航</text>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{showBackTop}}" class="back-menu qn-menu" animation="{{indicatorAnimation}}" bindtap="backToTop">
+        <text class="iconfont icon-backtop menu-text"></text>
+    </view>
+</view>
